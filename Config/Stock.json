@@ -1,0 +1,77 @@
+{
+    "Portatil": {
+        "01": {
+            "marca": "MSI",
+            "modelo": "MSI Titan 18 HX A14VIG-080ES",
+            "procesador": 24,
+            "ram": 64,
+            "grafica": "GeForce RTX 4090",
+            "almacenamiento": 2000,
+            "bateria": 99.9,
+            "pantalla": 18
+        },
+        "02": {
+            "marca": "Lenovo",
+            "modelo": "Lenovo LOQ 15IRH8 Intel Core i5-13420H",
+            "procesador": 8,
+            "ram": 16,
+            "grafica": "GeForce RTX 4050",
+            "almacenamiento": 512,
+            "bateria": 60,
+            "pantalla": 15.6
+        },
+        "03": {
+            "marca": "Lenovo",
+            "modelo": "Lenovo  IdeaPad Slim 3 15IAH8",
+            "procesador": 8,
+            "ram": 16,
+            "grafica": "Intel® UHD Graphics",
+            "almacenamiento": 512,
+            "bateria": 47,
+            "pantalla": 15.6
+        }
+    },
+    "Sobremesa": {
+        "04": {
+            "marca": "Acer",
+            "modelo": "Acer Predator Orion 7000",
+            "procesador": 24,
+            "ram": 32,
+            "grafica": "GeForce RTX 4090",
+            "almacenamiento": 2000,
+            "perifericos": {
+                "Monitor": "Samsung Odyssey QD-OLED BG85, 175 Hz, Ultra WQHD",
+                "Ratón": "Logitech G502 Hero Ratón Gaming 25600DPI",
+                "Teclado": "Corsair K95 RGB Platinum",
+                "Altavoces": 7.1,
+                "Auriculares": "K95 RGB Platinum"
+            }
+        },
+        "05": {
+            "marca": "PcCom",
+            "modelo": "PcCom Silver AMD Ryzen 5 3600",
+            "procesador": 12,
+            "ram": 16,
+            "grafica": "GeForce GTX 1660 Super",
+            "almacenamiento": 1480,
+            "perifericos": {
+                "Monitor": "Monitor PC 27\" (68,6 cm) AOC Q27B3MA 75 Hz, QHD, con altavoz",
+                "Ratón": "SteelSeries Rival 3 18000 DPI",
+                "Teclado": "Tempest K11",
+                "Auriculares": "K95 RGB Platinum"
+            }
+        },
+        "06": {
+            "marca": "PcCom",
+            "modelo": "PcCom Work AMD Ryzen 5 5600G",
+            "procesador": 6,
+            "ram": 16,
+            "grafica": "Radeon™ Graphics",
+            "almacenamiento": 512,
+            "perifericos": {
+                "Monitor": "Monitor LENOVO L2251p | VGA , DP | LCD 22\" PANORAMICO",
+                "Pack Ratón+Teclado": "Tacens Mars Gaming MCP1 Pack Gaming Teclado + Ratón"
+            }
+        }
+    }
+}
