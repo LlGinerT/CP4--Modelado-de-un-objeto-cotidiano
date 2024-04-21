@@ -1,18 +1,39 @@
+import json
 from Modulos.Ordenador import Portatil, Sobremesa
 
 
-class FactoriaOrdenadores:
+class FactoricaOrdenadores:
+    """Clase que permite instanciar cualquier objeto heredado de la clase Ordenador, 
+    gestionando la responsabilidad de la creación de los objetos a partir de un 
+    stock de especificaciones de componentes.
 
-    def __init__(self, stock) -> None:
+    Args:
+    - stock(json): archivo json con los componentes del ordenador a instanciar
+    """
+    def __init__(self, stock: json) -> None:
         self._componentes = stock
 
-    def instanciarProducto(self, formatoPc, id):
-
+    def instanciar_ordenador(self, formatoPc: str, id: str):
+        """Instancia un objeto de tipo 'formatoPc' ('Portatil' | 'Sobremesa') a partir de 
+        un ID y los atributos correspondientes del stock.
+        
+        Args:
+        - formatoPc (str): Tipo de ordenador a instanciar ('Portatil'|'Sobremesa').
+        - id (str): ID del ordenador a instanciar.
+        
+        Returns:
+        - Ordenador: 'Portatil' | 'Sobremesa'.
+        """
         if formatoPc == "Portatil":
-            atributos_pc = self._componentes["Portatil"][id]
-            return Portatil(id=id, **atributos_pc)
+            """ Instancia un ordenador con formato Portátil y 
+            los componentes dentro de un id especifico """
+            componentes_pc = self._componentes["Portatil"][id]
+            return Portatil(id=id, **componentes_pc)
 
         elif formatoPc == "Sobremesa":
-            atributos_pc = self._componentes["Sobremesa"][id]
-            perifericos = atributos_pc.pop("perifericos")
-            return Sobremesa(id=id, **atributos_pc, **perifericos)
+            """ Instancia un ordenador con formato Sobremesa y
+            un id especifico, primero extrae y crea un diccionario con los periféricos
+            de dentro de los componentes, para luego desempaquetarlo"""
+            componentes_pc = self._componentes["Sobremesa"][id]
+            perifericos = componentes_pc.pop("perifericos")
+            return Sobremesa(id=id, **componentes_pc, **perifericos)
