@@ -3,9 +3,9 @@ from Modulos.Ordenador import Portatil, Sobremesa
 
 
 class FactoricaOrdenadores:
-    """Clase que permite instanciar cualquier objeto heredado de la clase Ordenador, 
-    gestionando la responsabilidad de la creación de los objetos a partir de un 
-    stock de especificaciones de componentes.
+    """Clase que permite instanciar cualquier objeto heredado de la clase 'Ordenador', 
+    adquiere la responsabilidad de la creación de los objetos heredados de 'Ordenador' a partir de un 
+    archivo json con las especificaciones.
 
     Args:
     - stock(json): archivo json con los componentes del ordenador a instanciar
@@ -18,7 +18,7 @@ class FactoricaOrdenadores:
         un ID y los atributos correspondientes del stock.
         
         Args:
-        - formatoPc (str): Tipo de ordenador a instanciar ('Portatil'|'Sobremesa').
+        - formatoPc (str): Tipo de ordenador a instanciar ('Portatil' | 'Sobremesa').
         - id (str): ID del ordenador a instanciar.
         
         Returns:
